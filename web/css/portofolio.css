@@ -1,0 +1,788 @@
+body{
+    background-color: #9FCEE3;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.sdg{
+    transition: .3s;
+    transform: scale(1);
+}
+
+.sdg a{
+    padding-left:88px ;
+}
+
+.sdg:hover{
+    color: aliceblue;
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'East Sea Dokdo', cursive;
+    color: #000;
+}
+
+
+li{
+    list-style: none; 
+}
+
+
+header{
+    width: 100vw;
+    /* height: 80px; */
+}
+
+.menu{
+    width: 720px;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #CADEEC;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 4px 30px #6DBCE9;
+}
+.menu >ul{
+    padding-top: 16px;
+    display: flex;
+}
+
+.wrap_bg{
+    width: 100vw;
+    height: 760px;
+    position: relative;
+}
+
+h1{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: #FDDC0C;
+    padding-top: 120px;
+    margin-bottom: 8px;
+
+}
+
+.portofolioimg{
+    width: 880px;
+    height: 162px;
+    background: url("../imges/portfolioimg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    margin: auto;
+}
+.birdjs{
+    position: absolute;
+    right: 0;
+    transform-origin: right center ;
+    animation: birdfly 10s linear infinite;
+}
+
+@keyframes birdfly{
+        from{transform: rotateZ(0);}
+        to{transform: rotateZ(360deg);}
+}
+
+.cloud_island {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    }
+
+.island{
+    width:100%;
+    display: flex;
+    z-index: -1;
+    margin-top: 10px;
+}
+.island>img{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+}
+.fishs{
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    margin-top:250px;
+    justify-content: right; 
+}
+
+.fishs_img{
+    width: 200px;
+    height: 200px;
+}
+
+.bfish{
+            /* アニメーションの名前 */
+        animation-name:UpDown;
+        /* アニメーションの１回分の長さ */
+        animation-duration: 1.5s;
+        /* アニメーションの回数 */
+        animation-iteration-count: infinite;
+        /* アニメーションの進行具合 */
+        animation-timing-function: ease-in-out;
+        /* アニメーション再生の向き */
+        animation-direction: alternate;
+        }
+        /* アニメーションの設定 */
+        @keyframes UpDown{
+        /* 開始地点 */
+        0%{
+        /* Y軸0px */
+        transform: translateY(0);
+        }
+        /* 終了地点 */
+        100%{
+        /* Y軸50px */
+        transform: translateY(60px);
+        }
+    }
+.pfish{
+    animation-name:DownUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    }
+    @keyframes DownUp{
+    0%{
+    transform: translateY(0);
+    }
+    100%{
+    transform: translateY(50px);
+    }
+}  
+
+.cloud_left{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    z-index: -10;
+    animation: cloud1 5s infinite;
+}
+
+@keyframes cloud1{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(-25px, 5px); }
+}
+
+.cloud_move{
+    position: absolute;
+    bottom: 40px;
+    z-index: -12;  
+}
+
+.cloud_move1{
+    left: 15%;
+}
+.cloud_move1 img{
+    width:700px;
+    animation: cloud4 5s infinite;
+
+}
+@keyframes cloud4{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(30px, 5px); }
+
+}
+
+.cloud_move2{
+    z-index: -12;  
+    right: 25%;
+    bottom: 40px;
+    animation: movee 6s infinite;
+
+}
+    @keyframes movee{
+        0%,100% { transform: translate(0,0); }
+        50%     { transform: translate(15px, 5px); }
+    
+}
+
+.cloud_move2 img{
+    z-index: -10;  
+    width:550px
+}
+
+.cloud_right{
+    z-index: -12;  
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    animation: cloud3 6s infinite;
+
+}
+@keyframes cloud3{
+    0%,100% { transform: translate(0,0); }
+    60%     { transform: translate(25px, 0px); }
+
+}
+
+.slide {
+    width: 100%;
+    height: 100px; /* 画像の高さ */
+    background-image: url("../imges/sea.svg");
+    opacity: 0.8;
+    background-repeat: repeat-x;
+    background-size: auto 100px; /* 画像の高さ */
+    animation: loop 20s linear infinite;
+}
+@keyframes loop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2000px 0; /* 画像のマイナス幅 */
+    }
+}
+.main{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom,
+    #b5d8e9b4 10%, #9FCEE3 30%, #8ed2f1, #85c0db, #3196c99f );
+}
+
+.profle{
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.profle >.me{
+    height: 300px;
+    width: 200px;
+    margin-top: 100px;
+    z-index: 1;
+    animation: me 5s infinite ease-in-out alternate;
+
+}
+@keyframes me{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 30px); }
+
+}
+.fishh{
+    position: absolute;
+    left: 100px;
+    top: 930px;
+    z-index: 10;
+}
+
+.profletxt{
+    margin-top: 40px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+.profletxt >img{
+    width: 320px;
+    height: 400px;
+}
+
+.profletxt >h3{
+    margin-top: 56px;
+    margin-bottom: 64px;
+    font-size: 32px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 48px;
+}
+.profletxt >p{
+    font-size: 18px;
+
+}
+
+.fishbg{
+    margin-top: 200px;
+    width: 160px;
+    height: 80px;
+    opacity: 0.4;
+}
+
+.fishbg{
+    width: 160px;
+    height: 160px;
+    
+}
+
+.profle_more{
+    width: 100%;
+    height: 600px;
+    margin: 48px 0 auto;
+    background-image: url("../imges/profbg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.fish_img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.fishyellow{
+    position: absolute;
+    right: 360px;
+    animation-name:DownUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    }
+    @keyframes DownUp{
+    0%{
+    transform: translateY(0);
+    }
+    100%{
+    transform: translateY(50px);
+    }
+}
+.fishbg2{
+    position: absolute;
+    left: 180px;
+    top: 30px;
+}
+
+.submarine{
+    position: absolute;
+    bottom: -72px;
+    left: 30px;
+    animation: me 5s infinite ease-in-out alternate;
+
+}
+@keyframes me{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+
+}
+
+.squid{
+    position: absolute;
+    bottom: 0px;
+    right: 104px;
+    animation: me 5s infinite ease-in-out alternate;
+
+}
+@keyframes me{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+
+}
+
+.about{
+    width: 1000px;
+    height: auto;
+    display:flex;
+    margin: auto;
+}
+
+.about >img{
+    margin-top: 64px;
+    margin-left:64px ;
+    z-index: 30;
+
+}
+
+.potxt{
+    margin-top: 120px;
+    margin-left: 72px;
+    line-height: 32px;
+}
+
+h4{
+    text-align: center;
+    margin-top: 64px;
+    font-size: 64px;
+    font-family: 'East Sea Dokdo', cursive;
+    background: url("../imges/line.svg") bottom /contain no-repeat;
+    margin: auto;
+    background-size: 20% 20%;
+    position:relative;
+    bottom: -72px;
+}
+
+.button a{
+    margin-top: 24px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    background-color: #F39800;
+    line-height: 40px;
+    border-radius: 50px;
+    margin-left: 280px;
+    font-size: 20px;
+    color: #ECF3F9;
+    padding:16px 24px;
+    box-shadow: 0 5px 0 #a8a393;
+    transition: 0.3s;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.button a:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #af9d85;
+}
+
+.work{
+    text-align: center;
+    margin-top: 104px;
+    margin-bottom: 64px;
+    font-size: 64px;
+    font-family: 'East Sea Dokdo', cursive;
+    background: url("../imges/line.svg") bottom /contain no-repeat;
+    background-size: 20% 20%;
+}
+.workbox{
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+.workdetial{
+    position:relative;
+    width: 1000px;
+    height: 880px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index:10 ;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.work1{
+    background-color: #ecf3f9b6;
+    width: 480px;
+    height: 360px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgba(51, 49, 49, 0.329);
+}
+
+.chill>img{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 400px;
+    height:240px;
+    transition: 0.5s;
+    filter: none;
+}
+.chill:hover  img {
+    filter: grayscale(50%);
+}
+
+.bubu>img{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 400px;
+    height:240px;
+    transition: 0.5s;
+    filter: none;
+}
+.bubu:hover  img {
+    filter: grayscale(50%);
+}
+
+.resibook >img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 330px;
+    height:230px;
+    transition: 0.5s;
+    filter: none;
+}
+.resibook:hover  img {
+    filter: grayscale(50%);
+}
+
+.lolin >img{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 330px;
+    height:230px;
+    transition: 0.5s;
+    filter: none;
+}
+.lolin:hover  img {
+    filter: grayscale(50%);}
+
+
+.work1 p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+.chilltxt{
+    width: 100%;
+    height: 32px;
+    margin-top: 6px;
+    font-size: 16px;
+    text-align: center;
+    color: #F39800;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.fish_img2{
+    position: absolute;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+}
+
+.fish2_3{
+    position: absolute;
+    top: 0;
+    left: 8%;
+    animation: me 5s infinite ease-in-out alternate;
+    z-index: 30;
+}
+@keyframes me{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+
+}
+.fish2_1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+.fish2_2{
+    position: absolute;
+    bottom: 0px;
+    left: 80%;
+    z-index: 30;
+    animation: tako 7s infinite ease-in-out alternate;
+
+}
+@keyframes tako{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+
+}
+.fish2{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    animation: tako 3s infinite ease-in-out alternate;
+}
+@keyframes tako{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+}
+
+.fish3{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fish4{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.fish5{
+    position: absolute;
+    top: -80px;
+    left: -100px;
+}
+
+.button2 a{
+    /* display: inline-block; */
+    margin-top: 24px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    background-color: #F39800;
+    line-height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #ECF3F9;
+    padding:16px 24px;
+    box-shadow: 0 5px 0 #8d8775;
+    transition: 0.3s;
+    font-family: 'East Sea Dokdo', cursive;
+}
+/* a8a393 */
+
+.button2 a:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #af9d85;
+}
+
+.contacttxt{
+        text-align: center;
+        font-size: 64px;
+        font-family: 'East Sea Dokdo', cursive;
+        background: url("..//imges/line.svg") bottom /contain no-repeat;
+        margin: 32px 0 0  auto;
+        background-size: 20% 20%;
+}
+
+
+.contact >p{
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.contact_box{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background-image: url("..//imges/contactbg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+form{
+    width: 320px;
+    height: 600px;
+    padding-top: 24px;
+    margin: auto;
+}
+form >p{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+form > input{
+    background-color: #EFEDE7;
+    width: 320px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 4px rgba(239, 237, 231, 1);
+}
+
+
+
+#long{
+    width: 320px;
+    height: 122px;
+    background-color: #EFEDE7;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 10px 4px rgba(239, 237, 231, 1);
+}
+
+.button3{
+    margin-top: 40px;
+    height: 40px;
+    width: auto;
+    text-align: center;
+}
+.button3 a{
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    background-color: #F39800;
+    line-height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #ECF3F9;
+    padding:16px 24px;
+    box-shadow: 0 5px 0 #8d8775;
+    transition: 0.3s;
+    font-family: 'East Sea Dokdo', cursive;
+}
+/* a8a393 */
+
+.button3 a:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #af9d85;
+}
+
+.footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+}
+
+.fishpk{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    z-index: 30;
+    animation: pk 3s infinite ease-in-out alternate;
+}
+@keyframes pk{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+}
+
+.fishog{
+    width: 250px;
+    height: 200fdcvpx;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index: 30;
+    animation: pk 5s infinite ease-in-out alternate;
+}
+@keyframes pk{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+}
+.fishbl{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 30;
+    animation: pk 5s infinite ease-in-out alternate;
+}
+@keyframes pk{
+    0%,100% { transform: translate(0,0); }
+    50%     { transform: translate(5px, 50px); }
+}
+
+.fish8{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+}

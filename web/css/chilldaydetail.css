@@ -1,0 +1,173 @@
+body{
+    background-color: #9FCEE3;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.sdg{
+    transition: .3s;
+    transform: scale(1);
+}
+
+.sdg a{
+    padding-left:88px ;
+}
+
+.sdg:hover{
+    color: aliceblue;
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'East Sea Dokdo', cursive;
+    color: #000;
+}
+
+
+li{
+    list-style: none; 
+}
+
+
+header{
+    width: 100vw;
+    /* height: 80px; */
+}
+
+.menu{
+    width: 720px;
+    height: 80px;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #CADEEC;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 4px 30px #6DBCE9;
+}
+.menu >ul{
+    padding-top: 16px;
+    display: flex;
+}
+
+.back{
+    margin: 80px auto;
+    width: 1200px;
+    height: 1400px;
+    border-radius: 30px;
+    background-color: #ECF3F9;
+}
+
+.title{
+    width: 100%;
+    height: 512px;
+    display: flex;
+}
+
+.chillimg img{
+    margin-top: 40px;
+    width: 750px;
+    height: 460px;
+}
+
+.detail{
+    margin-top: 250px;
+}
+
+.detail p{
+    line-height: 32px;
+}
+
+.detail h1{
+    margin-top: 24px;
+    font-size: 40px;
+    font-family: 'Mogra', cursive;
+    color: #B7A486;
+}
+
+.button{
+    margin-top: 48px;
+}
+.button a{
+    margin-top: 32px;
+    width: 160px;
+    height: 10px;
+    text-align: center;
+    background-color: #C08838;
+    line-height: 8px;
+    border-radius: 50px;
+    margin-left: 240px;
+    font-size: 20px;
+    color: #ECF3F9;
+    padding:16px 24px;
+    box-shadow: 0 5px 0 #d6c3a7;
+    transition: 0.3s;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.button a:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #af9d85;
+}
+
+.middle{
+    width: 1000px;
+    margin: auto;
+}
+
+.kaiyotxt{
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.box{
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #C08838;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 45px;
+}
+.middle2{
+    padding-top: 24px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.left >p{
+    margin-bottom: 32px;
+}
+
+.left img{
+    width: 400px;
+    height: 132px;
+}
+
+.left{
+    margin-right: 80px;
+}
+
+.right >.thema{
+    margin-bottom: 26px;
+    line-height: 36px;
+}
+
+.right >img{
+    margin-top: 24px;
+}
+
+.thema1{
+    margin-bottom: 36px;
+}
